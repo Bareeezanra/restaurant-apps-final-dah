@@ -47,8 +47,8 @@ const Detail = {
           <div class="error-state">
             <h3>Error</h3>
             <p>${
-  error.message || 'Terjadi kesalahan saat memuat detail restaurant'
-}</p>
+              error.message || 'Terjadi kesalahan saat memuat detail restaurant'
+            }</p>
             <a href="#/" class="back-button">Kembali ke Beranda</a>
           </div>
         `;
@@ -70,8 +70,8 @@ const Detail = {
         >
         <div class="restaurant-detail__info">
           <h1 class="restaurant-detail__title">${
-  restaurant.name || 'Unnamed Restaurant'
-}</h1>
+            restaurant.name || 'Unnamed Restaurant'
+          }</h1>
           <div class="restaurant-detail__metadata">
             <div class="restaurant-detail__rating">
               <span>⭐</span>
@@ -87,8 +87,8 @@ const Detail = {
             </div>
           </div>
           <p class="restaurant-detail__description">${
-  restaurant.description || 'No description available'
-}</p>
+            restaurant.description || 'No description available'
+          }</p>
         </div>
       </div>
 
@@ -97,20 +97,20 @@ const Detail = {
           <h2>Menu Makanan</h2>
           <ul>
             ${
-  restaurant.menus?.foods
-    ?.map((food) => `<li>${food.name}</li>`)
-    .join('') || '<li>Tidak ada menu makanan</li>'
-}
+              restaurant.menus?.foods
+                ?.map((food) => `<li>${food.name}</li>`)
+                .join('') || '<li>Tidak ada menu makanan</li>'
+            }
           </ul>
         </div>
         <div class="menu-drinks">
           <h2>Menu Minuman</h2>
           <ul>
             ${
-  restaurant.menus?.drinks
-    ?.map((drink) => `<li>${drink.name}</li>`)
-    .join('') || '<li>Tidak ada menu minuman</li>'
-}
+              restaurant.menus?.drinks
+                ?.map((drink) => `<li>${drink.name}</li>`)
+                .join('') || '<li>Tidak ada menu minuman</li>'
+            }
           </ul>
         </div>
       </div>
@@ -119,26 +119,26 @@ const Detail = {
         <h2>Review Pelanggan</h2>
         <div class="review-list">
           ${
-  restaurant.customerReviews?.length > 0
-    ? restaurant.customerReviews
-      .map(
-        (review) => `
+            restaurant.customerReviews?.length > 0
+              ? restaurant.customerReviews
+                  .map(
+                    (review) => `
                 <div class="review-item">
                   <div class="review-header">
                     <span class="review-name">${
-  review.name || 'Anonymous'
-}</span>
+                      review.name || 'Anonymous'
+                    }</span>
                     <span class="review-date">${review.date || 'N/A'}</span>
                   </div>
                   <p class="review-text">${
-  review.review || 'No review content'
-}</p>
+                    review.review || 'No review content'
+                  }</p>
                 </div>
               `
-      )
-      .join('')
-    : '<div class="review-item">Belum ada review</div>'
-}
+                  )
+                  .join('')
+              : '<div class="review-item">Belum ada review</div>'
+          }
         </div>
       </div>
     </article>

@@ -3,7 +3,6 @@ const assert = require('assert');
 Feature('Removing Restaurants from Favorites');
 
 Before(({ I }) => {
-  // Buka halaman utama sebelum setiap skenario
   I.amOnPage('/');
 });
 

@@ -3,7 +3,6 @@ Feature('Review Restaurant');
 const assert = require('assert');
 
 Before(({ I }) => {
-  // Mulai dari halaman favorit
   I.amOnPage('/#/favorite');
 });
 

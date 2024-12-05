@@ -1392,3 +1392,17 @@ footer {
     padding: 1rem;
   }
 }
+
+@media (min-width: 480px) {
+  .hero {
+    background-image: url('../public/images/heros/hero-image_2-small.jpg');
+    height: 500px;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero {
+    background-image: url('../public/images/heros/hero-image_2-large.jpg');
+    height: 600px;
+  }
+}

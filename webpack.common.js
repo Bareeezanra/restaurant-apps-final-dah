@@ -71,9 +71,9 @@ module.exports = {
       ],
     }),
     new BundleAnalyzerPlugin({
-      analyzerMode: 'disable',
+      analyzerMode: 'static',
       analyzerPort: 8888,
-      openAnalyzer: true,
+      openAnalyzer: false,
     }),
     new WorkboxWebpackPlugin.GenerateSW({
       swDest: './sw.bundle.js',

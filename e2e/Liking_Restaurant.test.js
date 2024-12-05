@@ -3,7 +3,6 @@ const assert = require('assert');
 Feature('Restaurant Favorites Management');
 
 Before(({ I }) => {
-  // Arahkan ke halaman utama sebelum setiap skenario
   I.amOnPage('/');
 });
 
