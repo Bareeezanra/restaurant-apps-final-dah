@@ -59,10 +59,20 @@
     </header>
 
     <!-- Hero Element -->
-    <div
-      class="hero"
-      style="background-image: url('./images/heros/hero-image_2.jpg')"
-    >
+    <div class="hero">
+      <picture>
+        <!-- Gambar untuk perangkat dengan lebar layar maksimal 600px -->
+        <source
+          media="(max-width: 600px)"
+          srcset="./images/heros/hero-image_2-large.jpg"
+        />
+        <!-- Gambar default untuk layar lebih besar dari 600px -->
+        <img
+          src="./images/heros/hero-image_2.jpg"
+          alt="Discover Meals Restaurant"
+          class="lazy"
+        />
+      </picture>
       <h1 class="hero-title">Discover Delicious Meals</h1>
       <p class="hero-description">
         Explore a wide variety of culinary experiences tailored to your taste.
