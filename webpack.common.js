@@ -71,7 +71,7 @@ module.exports = {
       ],
     }),
     new BundleAnalyzerPlugin({
-      analyzerMode: 'server',
+      analyzerMode: 'disable',
       analyzerPort: 8888,
       openAnalyzer: true,
     }),
